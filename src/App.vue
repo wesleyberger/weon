@@ -1,32 +1,35 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+<v-app>
+  <TopBar appName="DEVEL" />
+  <SideBar />
+  <v-main>
+    <v-container fluid>
+      <router-view></router-view>
+    </v-container>
+  </v-main>
+
+  <v-footer app>
+  </v-footer>
+</v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import TopBar from './components/TopBar.vue';
+import SideBar from './components/SideBarMenu.vue';
+export default {
+  name: 'App',
+  components: {
+    TopBar,
+    SideBar,
+  },
+};
+</script>
+<style scoped>
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: #111827;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.v-toolbar {
+  z-index: 99999;
 }
 </style>
