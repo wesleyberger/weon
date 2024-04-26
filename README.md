@@ -1,38 +1,39 @@
-Nome do Projeto
-Breve descrição ou slogan do projeto.
+<h3 align="center">
+  TESTE WEON
+<h3 >
 
-Sumário
-Visão Geral
-Tecnologias Utilizadas
-Instalação
-Como Usar
-Contribuição
-Licença
-Contato
-Visão Geral
-Descreva brevemente o que é o projeto, seu propósito e suas principais funcionalidades.
+## Tecnologias utilizadas
 
-Tecnologias Utilizadas
-Liste as principais tecnologias, bibliotecas ou frameworks utilizados no projeto.
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-Exemplo:
+- [CSS]
+- [Express]
+- [HTML]
+- [JavaScript]
+- [VueJS]
+- [NPM]
+- [Vuetify]
+- [Leaflet]
+- [Google StreetMap]
 
-Vue.js
-Vuetify
-Axios
-Leaflet
-Instalação
-Forneça instruções sobre como instalar e configurar o ambiente de desenvolvimento.
+## Como baixar e iniciar o projeto
 
-Exemplo:
+```bash
 
-Copy code
-npm install
-Como Usar
-Explique como iniciar o servidor local, compilar o código ou qualquer outra ação necessária para utilizar o projeto.
+    # Clonar o repositório
+    $ git clone https://github.com/wesleyberger/weon.git
+    
+    # Necessário instalar o Node: 
+    >> https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+    
+    # Entre na Pasta do Projeto e execute os passos::
+    
+        # Instale as dependências
+        $ npm install ou yarn
+    
+        # Iniciar o projeto
+        $ yarn serve
+    
+    
+    
 
-Exemplo:
-
-arduino
-Copy code
-npm run serve
