@@ -13,31 +13,6 @@
         ></list-items>
       </div>
     </div>
-  <!-- <div>
-    <div class="main" v-if="addresses.length > 0">
-      <div class="map">
-        <map-leaf :address="addresses" :focus="focusItem"></map-leaf>
-        <street-view :focus="focusItem" :addresses="addresses"></street-view>
-      </div>
-      <div class="details">
-        <list-items
-          v-for="(item, index) in addresses"
-          :key="index"
-          :item="item"
-          @click="markerUpdate(item)"
-        ></list-items>
-      </div>
-    </div>
-    <v-banner icon="mdi-account-box" lines="two" v-else>
-      <template v-slot:prepend>
-        <v-avatar></v-avatar>
-      </template>
-
-      <v-banner-text>
-        {{ $t("message.notAddedAddresses") }}
-      </v-banner-text>
-    </v-banner>
-  </div> -->
 </template>
 
 <script>
